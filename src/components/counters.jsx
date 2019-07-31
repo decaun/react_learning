@@ -8,8 +8,17 @@ class Counters extends Component {
 			{ id: 2, value: 0 },
 			{ id: 3, value: 0 },
 			{ id: 4, value: 0 },
-		],
-	};
+		]
+    };
+    
+    handleIncrement = counter => {
+        const counters = [...this.state.counters];//this copies state.counters
+        const index = counters.indexOf(counter)
+        counters[index] = {...counter}
+        counters[index].value++;
+        console.log(this.state.counters[index]);
+        this.setState({counters});
+    };
 
 	handleDelete = counterId => {
 		console.log("Event Handler Called", counterId);
@@ -35,9 +44,10 @@ class Counters extends Component {
 					<Counter
 						key={counter.id}
 						value={counter.value}
-						onDelete={this.handleDelete}
                         id={counter.id}
                         counter={counter}
+                        onDelete={this.handleDelete}
+                        onIncrement={this.handleIncrement}
 					>
 						<h4>Counter #{counter.id} from parent</h4>
 					</Counter>
