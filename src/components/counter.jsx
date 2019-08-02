@@ -3,7 +3,22 @@
 
 import React, { Component } from 'react';
 
+
+
 class Counter extends Component {
+
+    componentDidUpdate(prevProps, prevState) {
+        console.log('prevProps', prevProps);
+        console.log('prevState', prevState);
+        //if (prevProps.counter.value != this.props.counter.value) {
+            //AJAX call to server for new data etc.
+        //}
+    }
+    
+    componentWillUnmount() {
+        console.log('Counter - Unmount');
+    }
+
     state={
         tags: ['tag1','tag2','tag3']
     };
@@ -32,6 +47,7 @@ class Counter extends Component {
 	}
 
     render () {
+        console.log('Counter - Rendered');
         console.log(this.props)
         return ( 
         <div>
