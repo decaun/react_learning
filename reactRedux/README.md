@@ -1,32 +1,31 @@
-![](http://i.imgur.com/5Bqs5zi.png)
+![](http://i.imgur.com/DUiL9yn.png)
 
-React boilerplate thenewboston tutorials.
+# React/Sass/Redux Boilerplate
 
-## Getting started
+Boilerplate and guide for a React/Sass/Redux build.
 
-To get started simply download the repo using the link below. All required files are included.
+## Getting Started
 
-https://github.com/buckyroberts/React-Boilerplate/archive/master.zip
-
-## Setting up Gulp (optional)
-
-You can also use Gulp to add additional build tasks. To use, follow the instructions below.
-
-Navigate to the root directory and  run the following command:
+To get started, first install all the necessary dependencies.
 ```
 > npm install
 ```
 
-After modules are installed, you can start watching for SCSS changes using the command:
+Run an initial webpack build
 ```
-> gulp
+> webpack
 ```
 
-You can install more modules and configure them in the **gulpfile.js** file as needed.
+Start the development server (changes will now update live in browser)
+```
+> npm run start
+```
+
+To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
 
 ## Links
 
-- [Support thenewboston](https://www.patreon.com/thenewboston)
+- [Donate](https://www.patreon.com/thenewboston)
 - [thenewboston.com](https://thenewboston.com/)
 - [Facebook](https://www.facebook.com/TheNewBoston-464114846956315/)
 - [Twitter](https://twitter.com/bucky_roberts)
