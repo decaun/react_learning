@@ -17,7 +17,8 @@ class App extends Component {
   }
 
   componentDidMount(){
-    this.props.onApiRequest();
+    setTimeout(()=>{this.props.onApiRequest();
+    },1500)
   }
 
   render(){
