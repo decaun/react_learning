@@ -2,6 +2,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+To create it 
+
+### npx create-react-app app-name
+
+To add redux
+
+### npm install --save redux react-redux
+
 In the project directory, you can run:
 
 ### `npm start`
