@@ -8,5 +8,4 @@ export default function userReducer(state='',{type,payload}){
             return state;
     }
 
-    return state;
 }
